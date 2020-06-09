@@ -7,6 +7,8 @@ use Illuminate\Support\Arr;
 
 class Waffle extends Model
 {
+    protected $guarded = [];
+
     /**
      * A waffle is belongs to a baker/user.
      *

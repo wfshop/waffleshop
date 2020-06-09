@@ -36,4 +36,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * An user may has many created waffles.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function waffles()
+    {
+        return $this->hasMany(Waffle::class, 'baker_id');
+    }
 }

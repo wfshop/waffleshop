@@ -1,0 +1,9 @@
+// Base stylesheet from library
+@import '~codemirror/lib/codemirror.css';
+
+// Overriding
+.CodeMirror {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
